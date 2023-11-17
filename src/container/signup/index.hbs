@@ -18,12 +18,17 @@
         </div>
 
         <div class="form__item">
-            {{> field-password action="signupForm.change" label="Пароль" type="password" name="password" placeholder="Ваш пароль"}}
+            {{> field-select action="signupForm.change" label="Роль"  name="role" placeholder="Оберіть роль" list=data.role}}
+            <span name="role" class="form__error">Помилка</span>
+        </div>
+
+        <div class="form__item">
+            {{> field-password action="signupForm.change" label="Пароль" type="password" name="password" placeholder="Ваш пароль" }}
             <span name="password" class="form__error">Помилка</span>
         </div>
 
         <div class="form__item">
-            {{> field-password action="signupForm.change" label="Пароль щу раз" type="password" name="password" placeholder="Ваш пароль"}}
+            {{> field-password action="signupForm.change" label="Пароль ще раз"  name="password" placeholder="Ваш пароль"}}
             <span name="password" class="form__error">Помилка</span>
         </div>
 

@@ -13,7 +13,7 @@
     line-height: 1em;
 
     cursor: pointer;
-    transition: border-color 0.3s;
+    transition: border-color(gray);
 
     &:hover {
       border-color: s.color(gray);
